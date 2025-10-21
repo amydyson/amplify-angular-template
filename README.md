@@ -98,27 +98,21 @@ This application includes a PDF generation service that creates print-ready HTML
 
 PrinceXML is a powerful tool that converts HTML and CSS into PDF documents. It supports advanced CSS features for print media, including page breaks, headers, footers, and more.
 
-### Using the PDF Service
+### Quick Start
 
-The application includes a `PdfService` that:
-- Formats HTML content with print-optimized CSS
-- Supports Prince-specific CSS properties (e.g., `@page` rules)
-- Generates downloadable PDF-ready HTML documents
+1. Run the application: `npm start`
+2. Click the "Export to PDF-Ready HTML" button
+3. Open the downloaded HTML file in a browser
+4. Use browser print (Ctrl+P / Cmd+P) to save as PDF
 
-To generate a PDF:
-1. Use the PDF export button in the application
-2. Open the downloaded HTML file in a browser
-3. Use browser print (Ctrl+P / Cmd+P) or PrinceXML CLI to generate PDF
+For complete documentation, see [PRINCEXML.md](./PRINCEXML.md)
 
-### PrinceXML CLI (Optional)
+### Key Features
 
-For production use, you can install PrinceXML:
-
-```bash
-# Download from https://www.princexml.com/download/
-# Then convert HTML to PDF:
-prince input.html -o output.pdf
-```
+- **@page Rules**: Custom page sizes, margins, headers, and footers
+- **Automatic Pagination**: Page numbering with counter(page) and counter(pages)
+- **Page Break Control**: CSS properties to control where pages break
+- **Print-Optimized Styling**: Professional typography and layout
 
 ## Additional Resources
 
