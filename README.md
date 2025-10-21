@@ -9,15 +9,44 @@ This is an AWS Amplify Gen 2 starter application built with Angular that demonst
 - PDF generation capability using PrinceXML-compatible HTML/CSS
 - Sample document with PDF export functionality
 
+## Prerequisites
+
+- Node.js 18+ and npm
+- AWS Account (for Amplify deployment)
+- Angular CLI (installed automatically)
+
 ## Development server
 
 To start a local development server, run:
 
 ```bash
-ng serve
+npm install
+npm start
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## AWS Amplify Gen 2 Setup (Optional)
+
+This template is ready for AWS Amplify Gen 2. To set up the backend:
+
+1. Install the Amplify CLI:
+```bash
+npm install -g @aws-amplify/cli
+```
+
+2. Navigate to the amplify directory and install dependencies:
+```bash
+cd amplify
+npm install
+```
+
+3. Start the Amplify sandbox:
+```bash
+npm run sandbox
+```
+
+4. Configure your backend resources in `amplify/backend.ts` as needed.
 
 ## Code scaffolding
 

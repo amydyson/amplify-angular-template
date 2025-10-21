@@ -1,0 +1,17 @@
+{
+  "name": "amplify-backend",
+  "version": "1.0.0",
+  "description": "AWS Amplify Gen 2 Backend Configuration",
+  "main": "backend.ts",
+  "type": "module",
+  "scripts": {
+    "sandbox": "ampx sandbox"
+  },
+  "dependencies": {
+    "@aws-amplify/backend": "^1.0.0"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend-cli": "^1.0.0",
+    "typescript": "^5.0.0"
+  }
+}
