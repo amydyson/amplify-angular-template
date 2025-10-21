@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Report</title>
+  <style>
+    /* PrinceXML-compatible styles */
+    @page {
+      size: Letter;
+      margin: 1in;
+      
+      @top-center {
+        content: string(doctitle);
+      }
+      
+      @bottom-right {
+        content: "Page " counter(page) " of " counter(pages);
+      }
+    }
+    
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 12pt;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    h1 {
+      string-set: doctitle content();
+      font-size: 24pt;
+      margin-top: 0;
+      color: #2c3e50;
+      page-break-after: avoid;
+    }
+    
+    h2 {
+      font-size: 18pt;
+      margin-top: 20pt;
+      color: #34495e;
+      page-break-after: avoid;
+    }
+    
+    h3 {
+      font-size: 14pt;
+      margin-top: 15pt;
+      color: #34495e;
+      page-break-after: avoid;
+    }
+    
+    p {
+      margin: 10pt 0;
+      text-align: justify;
+    }
+    
+    .page-break {
+      page-break-before: always;
+    }
+    
+    .avoid-break {
+      page-break-inside: avoid;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15pt 0;
+    }
+    
+    th, td {
+      border: 1pt solid #ddd;
+      padding: 8pt;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    @media print {
+      body {
+        margin: 0;
+      }
+    }
+    
+    /* Screen view styles */
+    @media screen {
+      body {
+        max-width: 8.5in;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Sample Report</h1>
+        
+        <h2>Introduction</h2>
+        <p>
+          This is a sample document that demonstrates PrinceXML capabilities. The document includes
+          proper formatting, page breaks, headers, and footers when converted to PDF.
+        </p>
+        
+        <h2>Key Features</h2>
+        <ul>
+          <li>Automatic page numbering</li>
+          <li>Headers and footers</li>
+          <li>Professional typography</li>
+          <li>Table support</li>
+          <li>Page break control</li>
+        </ul>
+        
+        <h2>Sample Data Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PDF Generation</td>
+              <td>Generate PDF-ready HTML with PrinceXML CSS</td>
+              <td>✓ Active</td>
+            </tr>
+            <tr>
+              <td>Page Layout</td>
+              <td>Custom page size and margins</td>
+              <td>✓ Active</td>
+            </tr>
+            <tr>
+              <td>Headers/Footers</td>
+              <td>Automatic headers and page numbers</td>
+              <td>✓ Active</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="page-break"></div>
+        
+        <h2>Second Page Content</h2>
+        <p>
+          This content appears on a new page thanks to the page-break class. PrinceXML
+          respects CSS page break properties for proper document pagination.
+        </p>
+        
+        <h3>Conclusion</h3>
+        <p>
+          This template provides a solid foundation for building PDF generation capabilities
+          into your Angular applications using PrinceXML or compatible tools.
+        </p>
+</body>
+</html>
