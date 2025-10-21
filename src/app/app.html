@@ -1,0 +1,97 @@
+<div class="container">
+  <header>
+    <h1>{{ title() }}</h1>
+    <p class="subtitle">AWS Amplify Gen 2 + Angular + PrinceXML</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to PrinceXML Integration Demo</h2>
+      <p>
+        This application demonstrates how to generate PDF-ready HTML documents using PrinceXML-compatible CSS.
+        Click the button below to export a sample document that can be converted to PDF.
+      </p>
+    </section>
+
+    <section class="document-preview">
+      <h2>Sample Document Preview</h2>
+      <div id="pdf-content" class="content-area">
+        <h1>Sample Report</h1>
+        
+        <h2>Introduction</h2>
+        <p>
+          This is a sample document that demonstrates PrinceXML capabilities. The document includes
+          proper formatting, page breaks, headers, and footers when converted to PDF.
+        </p>
+        
+        <h2>Key Features</h2>
+        <ul>
+          <li>Automatic page numbering</li>
+          <li>Headers and footers</li>
+          <li>Professional typography</li>
+          <li>Table support</li>
+          <li>Page break control</li>
+        </ul>
+        
+        <h2>Sample Data Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PDF Generation</td>
+              <td>Generate PDF-ready HTML with PrinceXML CSS</td>
+              <td>✓ Active</td>
+            </tr>
+            <tr>
+              <td>Page Layout</td>
+              <td>Custom page size and margins</td>
+              <td>✓ Active</td>
+            </tr>
+            <tr>
+              <td>Headers/Footers</td>
+              <td>Automatic headers and page numbers</td>
+              <td>✓ Active</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="page-break"></div>
+        
+        <h2>Second Page Content</h2>
+        <p>
+          This content appears on a new page thanks to the page-break class. PrinceXML
+          respects CSS page break properties for proper document pagination.
+        </p>
+        
+        <h3>Conclusion</h3>
+        <p>
+          This template provides a solid foundation for building PDF generation capabilities
+          into your Angular applications using PrinceXML or compatible tools.
+        </p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button (click)="exportToPdf()" class="export-btn">
+        <span class="icon">📄</span>
+        Export to PDF-Ready HTML
+      </button>
+      <p class="help-text">
+        After exporting, open the HTML file in a browser and use Print (Ctrl+P/Cmd+P) 
+        or PrinceXML CLI to generate the PDF.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with Angular {{ angularVersion }} • AWS Amplify Gen 2 Ready</p>
+  </footer>
+</div>
+
+<router-outlet />

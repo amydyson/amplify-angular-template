@@ -1,2 +1,96 @@
-# amplify-angular-template
-My Amplify Gen 2 starter application with PrinceXML
+# Amplify Angular Template with PrinceXML
+
+This is an AWS Amplify Gen 2 starter application built with Angular that demonstrates PDF generation using PrinceXML approach. This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+
+## Features
+
+- Angular 20.x application
+- AWS Amplify Gen 2 ready
+- PDF generation capability using PrinceXML-compatible HTML/CSS
+- Sample document with PDF export functionality
+
+## Development server
+
+To start a local development server, run:
+
+```bash
+ng serve
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## PrinceXML Integration
+
+This application includes a PDF generation service that creates print-ready HTML/CSS documents compatible with PrinceXML. 
+
+### What is PrinceXML?
+
+PrinceXML is a powerful tool that converts HTML and CSS into PDF documents. It supports advanced CSS features for print media, including page breaks, headers, footers, and more.
+
+### Using the PDF Service
+
+The application includes a `PdfService` that:
+- Formats HTML content with print-optimized CSS
+- Supports Prince-specific CSS properties (e.g., `@page` rules)
+- Generates downloadable PDF-ready HTML documents
+
+To generate a PDF:
+1. Use the PDF export button in the application
+2. Open the downloaded HTML file in a browser
+3. Use browser print (Ctrl+P / Cmd+P) or PrinceXML CLI to generate PDF
+
+### PrinceXML CLI (Optional)
+
+For production use, you can install PrinceXML:
+
+```bash
+# Download from https://www.princexml.com/download/
+# Then convert HTML to PDF:
+prince input.html -o output.pdf
+```
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

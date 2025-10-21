@@ -1,0 +1,160 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ff9900;
+  padding-left: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.content-area {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.content-area h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-top: 0;
+}
+
+.content-area h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-top: 1.5rem;
+  border-left: none;
+  padding-left: 0;
+}
+
+.content-area h3 {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-top: 1rem;
+}
+
+.content-area p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.content-area ul {
+  line-height: 1.8;
+  color: #444;
+}
+
+.content-area table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: white;
+}
+
+.content-area th,
+.content-area td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.content-area th {
+  background-color: #34495e;
+  color: white;
+  font-weight: bold;
+}
+
+.content-area tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.page-break {
+  margin: 2rem 0;
+  border-top: 2px dashed #ccc;
+  padding-top: 2rem;
+}
+
+.actions {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f7ff;
+  border-radius: 8px;
+}
+
+.export-btn {
+  background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.export-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.export-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.export-btn .icon {
+  font-size: 1.3rem;
+}
+
+.help-text {
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  color: #999;
+}
